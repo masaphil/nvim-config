@@ -9,13 +9,15 @@ augroup END
 
 let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'css': ['css-languageserver', '--stdio'],
+    \ 'scss': ['css-languageserver', '--stdio'],
     \ 'sass': ['css-languageserver', '--stdio'],
     \ 'less': ['css-languageserver', '--stdio'],
-    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascript': ['typescript-language-server', '--stdio'],
     \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
+    \ 'typescriptreact': ['typescript-language-server', '--stdio'],
     \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
     \ 'go': ['gopls'],
     \ 'c': ['clangd'],

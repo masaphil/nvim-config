@@ -21,6 +21,7 @@ call dein#begin(s:path, [
 call dein#load_toml(s:dein_toml, {'lazy': 0})
 call dein#load_toml(s:dein_lazy_toml, {'lazy' : 1})
 call dein#load_toml(s:dein_ft_toml)
+"call dein#add('nvim-treesitter/nvim-treesitter', {'merged': 0})
 
 let s:vimrc_local = findfile('vimrc_local.vim', '.;')
 if s:vimrc_local !=# ''

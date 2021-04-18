@@ -10,23 +10,24 @@ source ~/.config/nvim/plugins/deoplete.vim
 call deoplete#enable()
 '''
 
-[[plugins]]
-repo = 'tbodt/deoplete-tabnine' 
-on_event = 'InsertEnter'
-build = './install.sh'
+#[[plugins]]
+#repo = 'tbodt/deoplete-tabnine' 
+#on_event = 'InsertEnter'
+#build = './install.sh'
 
 #[[plugins]]
 #repo = 'prabirshrestha/async.vim'
-#
+
 #[[plugins]]
 #repo = 'prabirshrestha/vim-lsp'
-#
+
 #[[plugins]]
 #repo = 'mattn/vim-lsp-settings'
 #merged = 0
 #
 #[[plugins]]
 #repo = 'lighttiger2505/deoplete-vim-lsp'
+
 
 [[plugins]]
 repo = 'autozimu/LanguageClient-neovim'
@@ -50,19 +51,27 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'thinca/vim-themis'
 
-[[plugins]]
-repo = 'sheerun/vim-polyglot'
-hook_add = '''
-let g:polyglot_disabled = ['markdown', 'tsx', 'typescript']
-'''
+#[[plugins]]
+#repo = 'sheerun/vim-polyglot'
+#hook_add = '''
+#let g:polyglot_disabled = ['markdown', 'tsx', 'typescript']
+#'''
+
+#[[plugins]]
+#repo = 'ayu-theme/ayu-vim'
+#hook_add = '''
+#set termguicolors
+#let ayucolor="dark"
+#autocmd ColorScheme * highlight Comment ctermfg=14 guifg=#8FA0B3
+#autocmd ColorScheme * highlight LineNr ctermfg=14 guifg=#8FA0B3
+#colorscheme ayu
+#'''
 
 [[plugins]]
 repo = 'ayu-theme/ayu-vim'
 hook_add = '''
 set termguicolors
 let ayucolor="dark"
-autocmd ColorScheme * highlight Comment ctermfg=14 guifg=#8FA0B3
-autocmd ColorScheme * highlight LineNr ctermfg=14 guifg=#8FA0B3
 colorscheme ayu
 '''
 
@@ -92,4 +101,14 @@ source ~/.config/nvim/plugins/fugitive.vim
 repo = 'airblade/vim-gitgutter'
 hook_source = '''
 source ~/.config/nvim/plugins/gitgutter.vim
+'''
+
+[[plugins]]
+repo = 'p00f/nvim-ts-rainbow'
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+merged = '0'
+hook_source = '''
+source ~/.config/nvim/plugins/treesitter.vim
 '''

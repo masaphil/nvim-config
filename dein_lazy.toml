@@ -288,3 +288,10 @@ let g:rustfmt_autosave = 1
 [[plugins]]
 repo = 'whonore/Coqtail'
 on_ft = "coq"
+
+[[plugins]]
+repo = 'fatih/vim-go'
+hook_add = '''
+  " 保存時に必要なimportを自動的に挿入
+  let g:go_fmt_command = "goimports"
+'''

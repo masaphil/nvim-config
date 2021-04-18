@@ -34,7 +34,7 @@ set nomodeline
 " Use clipboard register.
 
 let g:python_host_prog = system("echo -n (pyenv root)/versions/(pyenv global | grep '^2')/bin/python")
-let g:python3_host_prog = system("echo -n (pyenv root)/versions/(pyenv global | grep '^3')/bin/python")
+let g:python3_host_prog = "/usr/bin/python3"
 
 " if (!has('nvim') || $DISPLAY != '') && has('clipboard')
 "   if has('unnamedplus')
